@@ -76,14 +76,14 @@ function Header({ showForm, setShowForm }) {
 }
 
 const CATEGORIES = [
-  { name: "real-analysis", color: "#3b82f6" },
-  { name: "stat-learning", color: "#16a34a" },
-  { name: "discrete-math", color: "#ef4444" },
-  { name: "probability", color: "#eab308" },
+  { name: "full-stack", color: "#3b82f6" },
+  { name: "ai-dev", color: "#16a34a" },
+  { name: "game-dev", color: "#ef4444" },
+  { name: "data-engineer", color: "#eab308" },
   { name: "robotics", color: "#db2777" },
   { name: "rgbd-sensor", color: "#14b8a6" },
-  { name: "stochastic-process", color: "#f97316" },
-  { name: "linear-algebra", color: "#8b5cf6" },
+  { name: "education", color: "#f97316" },
+  { name: "healthcare", color: "#8b5cf6" },
 ];
 
 function isValidHttpUrl(string) {
@@ -147,7 +147,7 @@ function NewFactForm({ setFacts, setShowForm }) {
     <form className="fact-form" onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Ask a question..."
+        placeholder="Add a job..."
         value={text}
         onChange={(e) => setText(e.target.value)}
         disabled={isUploading}
@@ -155,7 +155,7 @@ function NewFactForm({ setFacts, setShowForm }) {
       <span>{200 - textLength}</span>
       <input
         type="text"
-        placeholder="Notes Link..."
+        placeholder="Job Link..."
         value={source}
         onChange={(e) => setSource(e.target.value)}
         disabled={isUploading}

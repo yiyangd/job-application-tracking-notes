@@ -212,7 +212,7 @@ function FactList({ facts, setFacts }) {
   if (facts.length === 0) {
     return (
       <p className="message">
-        No notes for this category yet! Create the first one!
+        No jobs applied for this category yet! Create the first one!
       </p>
     );
   }

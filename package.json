@@ -2,7 +2,7 @@
   "name": "daily-notes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yiyangd.github.io/Daily-Notes/",
+  "homepage": "https://yiyangd.github.io/job-application-tracking-notes/",
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
     "@testing-library/dom": "^10.4.0",

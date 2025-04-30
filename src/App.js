@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import supabase from "./supabase";
 
 import "./style.css";
-import './App.css';
+import "./App.css";
 
 function App() {
   const [showForm, setShowForm] = useState(false); // 1. define state variable
@@ -56,7 +56,7 @@ function Loader() {
 }
 
 function Header({ showForm, setShowForm }) {
-  const appTitle = "Notes I Took";
+  const appTitle = "Jobs I Applied";
 
   return (
     <header className="header">
@@ -69,7 +69,7 @@ function Header({ showForm, setShowForm }) {
         className="btn btn-large btn-open"
         onClick={() => setShowForm((show) => !show)} // 3. update state variable
       >
-        {showForm ? "Close" : "Ask a Question"}
+        {showForm ? "Close" : "Add a Job"}
       </button>
     </header>
   );
